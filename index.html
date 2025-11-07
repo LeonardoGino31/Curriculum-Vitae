@@ -2,93 +2,87 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="autor" content="Gino Quinde">
+    <meta name="description"
+        content="Curriculum Vitae de Gino Quinde, estudiante de Computación e Informática enfocado en el desarrollo web.">
+    <meta name="keywords" content="Curriculum Vitae, Gino Quinde, Experiencia Laboral, Html, Css, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    
+    
+    <!-- Método embebido de CSS comentado -->
+    <!-- <style>
+        body {
+            font-family: Arial , sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+    </style> -->
     <title>Curriculum Vitae</title>
 </head>
 
 <body>
-    <header>
-        <h1>Curriculum Vitae</h1>
-        <nav>
-            <ul>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#experiencia_laboral">Experiencia Laboral</a></li>
-                <li><a href="#testimonios">Testimonios</a></li>
-            </ul>
-        </nav>
-    </header>
+   
+    <header class="relative bg-cover bg-center bg-no-repeat"
+        style="background-image: url('https://picsum.photos/200/300?random=1');">
+
+  <div class="absolute inset-0 bg-black/40 pointer-events-none"></div>
+
+
+  <div class="relative z-10 flex flex-col items-center justify-center text-center py-10 text-white">
+    <h1 class="text-4xl font-extrabold mb-6">Curriculum Vitae</h1>
+
+    <nav class="flex flex-wrap justify-center gap-6 text-lg font-medium mb-8">
+      <a href="#descripcion" class="hover:text-blue-300">Acerca de mí</a>
+      <a href="#habilidades" class="hover:text-blue-300">Habilidades</a>
+      <a href="#experiencia" class="hover:text-blue-300">Experiencia Laboral</a>
+      <a href="#estudios" class="hover:text-blue-300">Estudios</a>
+      <a href="#videoPresentacion" class="hover:text-blue-300">Video Presentación</a>
+      <a href="#proyectos" class="hover:text-blue-300">Proyectos</a>
+      <a href="#testimonios" class="hover:text-blue-300">Testimonios</a>
+      <a href="#contacto" class="hover:text-blue-300">Contacto</a>
+    </nav>
+
+    <img id="photo" src="img/foto.jpg" alt="Foto" 
+         class="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg" />
+  </div>
+</header>
+
+
     <main>
-        <article>
-            <h2>Habilidades</h2>
-            <ul>
-                <li><b>Lenguajes:</b> Python, C, Java, SQL</li>
-                <li><b>Habilidades blandas:</b> Liderazgo, Adaptabilidad, Disciplina, Comunicación efectiva</li>
-                <li><b>Idiomas: </b> Inglés (B2), Francés (A1)</li>
-            </ul>
-
-        </article>
-
-        <section>
-            <h2>Experiencia Laboral</h2>
-            <p>.</p>
-        </section>
-        <section id="testimonios">
-            <h2>Testimonios</h2>
-            <p>Aquí algunos de los testimonios de personas con las que he tenido el placer de trabajar:</p>
-
-            <article class="testimonio">
-                <blockquote>
-                    "Una experiencia increíble trabajar con [Tu nombre]. Es muy profesional y comprometido."
-                </blockquote>
-                <p><strong>Juan Pérez</strong>, CEO en Tech Solutions</p>
-                <p>Juan fue mi supervisor durante mi tiempo como desarrollador senior en Tech Solutions. Durante este
-                    período, aprendí mucho sobre el trabajo en equipo y la resolución de problemas complejos. Su enfoque
-                    en la innovación y la calidad me inspiró a mejorar mis habilidades constantemente.</p>
-            </article>
-
-            <article class="testimonio">
-                <blockquote>
-                    "Un líder natural, siempre dispuesto a escuchar y aportar soluciones creativas."
-                </blockquote>
-                <p><strong>Ana Gómez</strong>, Directora de Marketing en Creativa Agency</p>
-                <p>Ana y yo trabajamos juntos en varios proyectos, donde pude liderar un equipo de diseñadores y
-                    desarrolladores. Su enfoque colaborativo y su capacidad para entender tanto las necesidades del
-                    cliente como las del equipo fueron clave para el éxito de nuestros proyectos.</p>
-            </article>
-
-            <article class="testimonio">
-                <blockquote>
-                    "Un compañero confiable, siempre dispuesto a enfrentar nuevos retos con entusiasmo."
-                </blockquote>
-                <p><strong>Carlos Martínez</strong>, Gerente de Proyectos en Digital Solutions</p>
-                <p>Trabajé con Carlos en un proyecto de transformación digital. Su capacidad para gestionar el tiempo y
-                    sus habilidades organizativas fueron esenciales para que entregáramos el proyecto a tiempo y con los
-                    mejores resultados posibles. Fue un placer colaborar con él.</p>
-            </article>
-
-        </section>
-        <article>
-            <h2>Estudios</h2>
+        <section id="descripcion" class="bloque">
+            <h2 class="subtitle">Acerca de mi</h2>
+            <p>Soy estudiante de la <strong>Escuela Superior Politécnica del Litoral (ESPOL)</strong>,
+                cursando la carrera de <em>Computación</em>. Me apasiona la tecnología y el aprendizaje constante. Si
+                deseas conocer más de mi trabajo, visita mi <a href="https://github.com/LeonardoGino31">perfil</a> de
+                GitHub.</p>
+            <p><strong>Áreas de interés: </strong></p>
             <ol>
-                <li>Licenciatura en Ingeniería de Software - Universidad XYZ</li>
-                <li>Máster en Desarrollo Web - Universidad ABC</li>
-                <li>Certificación en Scrum Master - Scrum Alliance</li>
+                <li>Internet de las Cosas (IoT)</li>
+                <li>Inteligencia Artificial</li>
+                <li>Algoritmos</li>
+                <li>Sistemas Embebidos</li>
+                <li>Desarrollo web y móvil</li>
             </ol>
-        </article>
-        <article>
-            <h2>Cargos</h2>
-            <ul>
-                <li>Desarrollador web full-stack</li>
-                <li>Gestión de proyectos ágiles</li>
-                <li>Optimización de rendimiento de sitios web</li>
-            </ul>
+        </section>
+        <section id="videoPresentacion" class="bloque">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Video Presentacion Youtube"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+                web-share"
+                allowfullscreen>
+            </iframe>
+        </section>
 
-        </article>
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <table style="border-collapse: collapse; width: 100%;">
+        <section id="habilidades" class="bloque">
+            <h2 class="subtitle">Habilidades</h2>
+            <table>
                 <thead>
                     <tr>
                         <th>Habilidad</th>
@@ -105,7 +99,7 @@
                         <td>Español</td>
                     </tr>
                     <tr>
-                        <th>Lenguajes de Programación</th>
+                        <th>Lenguajes</th>
                         <td>Python</td>
                         <td>JavaScript</td>
                         <td>Java</td>
@@ -119,116 +113,195 @@
                 </tbody>
             </table>
         </section>
-        <section id="ubicacion">
-            <h2>Ubicación</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.320732155917!2d-122.08424968469266!3d37.42206597982571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5c77b6e5615%3A0x7b82a434a21e3e72!2sGoogleplex!5e0!3m2!1ses-419!2sus!4v1600000000000!5m2!1ses-419!2sus"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" title="Mapa de Google Maps - Ubicación">
-            </iframe>
-        </section>
-        <section id="imagen-ejemplo">
-            <h2>Proyecto Destacado</h2>
-            <img src="https://picsum.photos/600/400" alt="Imagen de ejemplo de proyecto" width="600" height="400" />
-        </section>
-        <section id="video-presentacion">
-            <h2>Video de Presentación</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Video de presentación en YouTube" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </section>
-        <section id="contacto">
-            <h2>Contacto</h2>
 
+        <section id="experiencia" class="bloque">
+            <h2 class="subtitle">Experiencia Laboral</h2>
+            <ul>
+                <li>
+                    <p>
+                        <strong>Ayudante de Docencia</strong><br>
+                        Escuela Superior Politécnica del Litoral (ESPOL) - Mar 2023 a Dic 2023<br>
+                        Responsabilidades:<br>
+                        - Asistencia en la preparación y dictado de clases prácticas.<br>
+                        - Soporte a estudiantes en la resolución de dudas y problemas técnicos.<br>
+                        - Evaluación de trabajos prácticos y pruebas.<br>
+
+                    </p>
+                </li>    
+            </ul>
+        </section>
+
+        <section id="testimonios" class="bloque">
+            <h2 class="subtitle">Testimonios</h2>
+                <article>
+                    <blockquote>
+                        “Gino demostró un gran compromiso y creatividad durante el desarrollo de nuestra página web
+                        corporativa.”
+                    </blockquote>
+                    <p>
+                        <strong>María López</strong><br>
+                        <em>Gerente de Proyectos en WebSoft S.A.</em><br>
+                        Trabajamos juntos en la renovación del sitio institucional, donde destacó por su dominio de
+                        HTML,
+                        CSS y atención al detalle.
+                    </p>
+                </article>
+                <article>
+                    <blockquote>
+                        “La dedicación y habilidades técnicas de Gino fueron clave para el éxito de nuestro proyecto de
+                        e-commerce.”
+                    </blockquote>
+                    <p>
+                        <strong>Carlos Fernández</strong><br>
+                        <em>Director de Tecnología en TechSolutions</em><br>
+                        Gino fue responsable del desarrollo front-end, implementando soluciones innovadoras que
+                        mejoraron la
+                        experiencia del usuario.
+                    </p>
+                </article>
+                <article>
+                    <blockquote>
+                        “Gino es un profesional confiable y proactivo, siempre dispuesto a aprender y superar desafíos.”
+                    </blockquote>
+                    <p>
+                        <strong>Laura Martínez</strong><br>
+                        <em>Coordinadora de Proyectos en Innovatech</em><br>
+                        Durante su pasantía, Gino mostró una rápida adaptación a nuevas tecnologías y una excelente
+                        capacidad para trabajar en equipo.
+                    </p>
+                </article>
+        </section>
+
+        <section id="proyectos" class="bloque">
+            <h2 class="subtitle">Proyectos</h2>
+            <ul>
+                <li>
+                    <p><strong>Patrones de Diseño</strong>(Java) Descripción: Implementación de patrones de diseño en
+                        Java (Decorator, Facade, Factory) como parte de un taller académico.<br>
+                        Repositorio:<a href="https://github.com/LeonardoGino31/PatronesDise-o.git"> Patrones de
+                            Diseño</a>
+                    <p>
+                </li>
+                <li>
+                    <p><strong>Top Musical</strong>(JavaFX) Descripción: Aplicación en JavaFX que muestra el Top 10
+                        musical con datos cargados desde un archivo CSV y una interfaz gráfica desarrollada con FXML.
+                        <br>
+                        Repositorio:<a href="https://github.com/LeonardoGino31/Taller01-Ramas.git"> Aplicación
+                            musical</a>
+                    </p>
+                </li>
+                <li>
+                    <p><strong>ZeroWaste </strong>(Android Studio) Descripción: Prototipo de aplicación Android dedicada
+                        a la alimentación saludable y controlada, diseñada en Android Studio con apoyo en prototipado en
+                        Canva.<br>
+                        Repositorio:<a href="https://github.com/LeonardoGino31/AppAndroidS_ZeroWaste.git">
+                            AppAndroidS_ZeroWaste</a></p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="estudios" class="bloque">
+            <h2 class="subtitle">Estudios</h2>
+            <ol>
+                <li>Bachiller Técnico en Informática - UE Amarilis Fuentes Alcívar</li>
+                <li>Estudiante de ingeniería en Ciencias Computacionales - Escuela Superior Politécnica del Litoral</li>
+            </ol>
+        </section>
+        <section id="ubicacion" class="bloque ">
+            <h2 class="subtitle">Ubicación</h2>
+            <iframe id="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2901.83272638348!2d-79.91394512678534!3d-2.237809337402733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6fb370ae0c2f%3A0xa1f904ed3e831697!2sTALLER%20YURITO!5e1!3m2!1sen!2sec!4v1761224796751!5m2!1sen!2sec"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p>Guayaquil, Ecuador</p>
+        </section>
+
+        <section id="contacto" class="bloque">
+            <h2 class="subtitle">Contacto</h2>
             <form action="/enviar" method="post">
 
-                <!-- Campo de texto en una línea -->
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required />
-                </div>
+                <label for="nombre"><strong>Nombre:</strong></label>
+                <input type="text" id="nombre" name="nombre" required />
 
-                <!-- Lista desplegable -->
-                <div>
-                    <label for="asunto">Asunto:</label>
-                    <select id="asunto" name="asunto" required>
-                        <option value="">Seleccione un asunto</option>
-                        <option value="consulta">Consulta</option>
-                        <option value="propuesta">Propuesta</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </div>
 
-                <!-- Selección única (radio buttons) -->
+                <label for="asunto"><strong>Asunto:</strong></label>
+                <select id="asunto" name="asunto">
+                    <option value="">--Seleccione un asunto--</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="propuesta">Propuesta</option>
+                    <option value="otro">Otro</option>
+                </select>
+
                 <fieldset>
-                    <legend>¿Cómo conoció mi trabajo?</legend>
+                    <legend><strong>¿Cómo conoció mi trabajo?:</strong></legend>
 
-                    <div>
-                        <input type="radio" id="internet" name="fuente" value="internet" required />
-                        <label for="internet">Internet</label>
-                    </div>
+                    <input type="radio" id="internet" name="fuente" value="internet" required />
+                    <label for="internet">Internet</label>
 
-                    <div>
-                        <input type="radio" id="referencia" name="fuente" value="referencia" />
-                        <label for="referencia">Referencia</label>
-                    </div>
+                    <input type="radio" id="referencia" name="fuente" value="referencia" required />
+                    <label for="referencia">Referencia</label>
 
-                    <div>
-                        <input type="radio" id="evento" name="fuente" value="evento" />
-                        <label for="evento">Evento</label>
-                    </div>
+
+                    <input type="radio" id="evento" name="fuente" value="evento" required />
+                    <label for="evento">Evento</label>
+
                 </fieldset>
 
-                <!-- Selección múltiple (checkboxes) -->
                 <fieldset>
-                    <legend>Intereses</legend>
+                    <legend><strong>Intereses</strong></legend>
 
-                    <div>
-                        <input type="checkbox" id="desarrollo" name="intereses" value="desarrollo" />
-                        <label for="desarrollo">Desarrollo Web</label>
-                    </div>
+                    <input type="checkbox" id="desrrrollo" name="intereses" value="desarrollo" />
+                    <label for="desarrollo">Desarrollo Web</label>
 
-                    <div>
-                        <input type="checkbox" id="diseño" name="intereses" value="diseño" />
-                        <label for="diseño">Diseño UX/UI</label>
-                    </div>
+                    <input type="checkbox" id="iot" name="intereses" value="iot" />
+                    <label for="iot">Internet de las Cosas (IoT)</label>
 
-                    <div>
-                        <input type="checkbox" id="consultoria" name="intereses" value="consultoria" />
-                        <label for="consultoria">Consultoría</label>
-                    </div>
+                    <input type="checkbox" id="ia" name="intereses" value="ia" />
+                    <label for="ia">Inteligencia Artificial</label>
+
                 </fieldset>
 
-                <!-- Área de texto -->
-                <div>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" cols="33" placeholder="Escribe tu mensaje aquí..."
-                        required></textarea>
-                </div>
 
-                <!-- Botón para enviar -->
-                <div>
-                    <button type="submit">Enviar</button>
-                </div>
+                <label for="mensaje"><strong>Mensaje:</strong></label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+
+                <button class="bg-blue-400 hover:bg-blue-600 hover:shadow-lg text-white font-semibold py-2 px-4 rounded transition-all duration-300" type="submit">Enviar</button>
+
 
             </form>
         </section>
-
-
-
-
+        <section id="pruebaFlex" class="bloque" >
+            <h2 class="subtitle" id="subPruebaFlex">Sección de Prueba</h2>
+            <p id="textPruebaFlex">Esta es una sección de prueba para verificar el correcto funcionamiento del CSS
+                externo.</p>
+            <div class="caja">Caja Roja</div>
+            <div class="caja">Caja Verde</div>
+            <div class="caja">Caja Azul</div>
+            <div class="caja">Caja Amarilla</div>
+        </section>
+        <section id="pruebaGrid" class="bloque">
+            <h2 class="subtitle">Sección de Prueba Grid</h2>
+            <p>Esta es una sección de prueba para verificar el correcto funcionamiento del CSS Grid.</p>
+            <div class="grid-container">
+                <div class="grid-item">Elemento 1</div>
+                <div class="grid-item">Elemento 2</div>
+                <div class="grid-item">Elemento 3</div>
+                <div class="grid-item">Elemento 4</div>
+                <div class="grid-item">Elemento 5</div>
+                <div class="grid-item">Elemento 6</div>
+            </div>
+        </section>
+        <figure width="250" height="200">
+        <img src="https://picsum.photos/200/300?random=1" width="200" height="230" alt="Elmento Aleatorio" class="w-64 h-64 object-cover rounded-lg shadow-md mx-auto"/>
+        <figcaption>Fondo Aleatorio</figcaption>
+        </figure>
     </main>
     <footer>
-        <p>Si deseas ver más sobre mi experiencia profesional, puedes visitar mi perfil en
-            <a href="https://www.linkedin.com/in/mi-perfil" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
-        </p>
-
+        <p>Si deseas ver más sobre mi experiencia profesional, puedes visitar mi perfil en <a
+                href="https://www.linkedin.com/in/mi-perfil" target="_blank" rel="noopener noreferrer">linkedin</a></p>
         <p>Creado por Gino Quinde.</p>
     </footer>
-
-
 </body>
 
 </html>
